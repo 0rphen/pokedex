@@ -1,0 +1,94 @@
+.pContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(215deg, #03a9f4, #ff0058);
+}
+
+.pCard {
+    width: 700px;
+    background: rgba(255,255,255,0.02);
+    padding: 20px;
+    backdrop-filter: blur(25);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.07);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition-duration: .5s;
+}
+
+.pCard_header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.button {
+    flex: 1;
+    align-items: center;
+    padding: 5px 25px;
+    border: none;
+    width: 75px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.pInput {
+    flex: 3;
+    width: 75px;
+    align-items: center;
+    align-content: center;
+    border: none;
+    padding: 5px 5px;
+    border-radius: 3px;
+    margin-right: 7px;
+}
+
+.pInput_select {
+    flex: 2;
+    width: 55px;
+    align-items: center;
+    align-content: center;
+    border: none;
+    cursor: inherit;
+    padding: 6px 5px;
+    border-radius: 3px;
+    margin-right: 7px;
+    outline: none;
+    appearance: none;
+}
+
+.pCard_body {
+    height: 0px;
+    opacity: 0;
+    transition-duration: .5s;
+}
+
+.active {
+    height: 200px !important;
+    opacity: 1 !important;
+    transition: height .5s, opacity .5s;
+}
+
+.pCard_text {
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+		 0 0 20px #fff,
+		 0 0 40px #fff,
+		 0 0 80px #fff,
+		 0 0 160px #fff;
+}
+
+.pCenter {
+    text-align: center;
+}
+
+select {
+    outline: none;
+}
